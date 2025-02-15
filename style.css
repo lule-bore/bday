@@ -189,6 +189,7 @@ h5 {
   max-width: 90%;
   height: auto;
   margin: 1rem 0;
+  text-align: end;
 }
 
 h6{
