@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    overflow: hidden;
+  }
+  
+  /* Main Section */
+  .main-section {
+    position: relative;
+    text-align: center;
+  }
+  
+  .main-button {
+    color: #00095e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 400%;
+    padding: 2rem 4rem;
+    background-color: #42b8e7;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s ease;
+    width: 900px;
+    height: 600px;
+  }
+  
+  /* Valentine Question */
+  .second-section {
+    position: absolute;
+    background: #96beec;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+    width: 300px;
+    height: 400px;
+    font-family: 'Lucida Sans', sans-serif; /* Added fallback font */
+    
+    /* New text styling */
+    color: #ffffff; /* Text color */
+    font-size: 2rem; /* Base text size */
+  }
+    
+
+  
+  .second-section.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  
+  .yes, .no {
+    font-size: 80%;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #f5f5f5;
+    font-family: cursive;
+  }
+  
+  .yes { background: #0a7ea1;; 
+width: 60%;
+}
+  .no { background: #0a7ea1;; 
+width: 45%;
+text-align:center;
+ }
+  
+  /* Accepted Section */
+  .accepted {
+    position: absolute;
+    background: #1b7ab9;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    transition: all 0.5s ease;
+    font-family: "Lucinda Sans";
+    color: #ffffff; /* Text color */
+    font-size: 3rem; /* Base text size */
+  }
+  .accepted.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  .button-container {
+    position: relative; /* Crucial for absolute positioning */
+    min-height: 200px; /* Ensure space for buttons */
+  }
+  h5 {
+    font-size: 2rem;       /* Normal paragraph text size */
+    font-weight: normal;   /* Removes bold styling */
+    line-height: 1.6;      /* Improves readability like a paragraph */
+    max-width: 600px;      /* Limits width for better readability */
+    margin: 0.5em auto;    /* Centered with paragraph-like spacing */
+    text-align: center;      /* Regular paragraph alignment */
+  }
+
+  /* Enable scrolling for the entire page */
+html {
+  scroll-behavior: smooth; /* Optional: for smooth scrolling */
+}
+
+body {
+  overflow-y: auto; /* Ensure vertical scrollbar appears when needed */
+}
+
+/* Make sections take at least full viewport height */
+.main-section,
+.second-section,
+.accepted {
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.second-section,
+.accepted {
+  position: center;
+  margin: 2rem auto;
+  transform: none;
+  margin-top:20% ;
+}
