@@ -89,7 +89,7 @@ body {
   max-width: 600px;
   color: #ffffff;
   font-size: 1.2rem;
-  margin: 1rem;
+  margin-top: 4rem;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -136,7 +136,7 @@ h5 {
   border-radius: 5px;
   cursor: pointer;
   color: #f5f5f5;
-  font-family: cursive;
+  font-family: 'Lucida Sans', sans-serif;
   width: 80%;
   max-width: 200px;
 }
